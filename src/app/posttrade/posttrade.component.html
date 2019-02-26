@@ -1,0 +1,248 @@
+<div class="row">
+  <!-- Column -->
+  <div class="col-lg-12">
+    <div class="card">
+      <div class="card-body">
+        <form action="#">
+          <div class="form-body">
+            <h5 class="card-title">Post</h5>
+            <hr>
+            <!--/row-->
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <div ngbDropdown class="d-inline-block">
+                    <label>From</label>
+                    <button
+                      class="btn btn-outline-primary"
+                      id="FromCountry"
+                      ngbDropdownToggle>
+                      <i class="flag-icon flag-icon-mn"></i> Mongolia
+                    </button>
+                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                      <button class="dropdown-item"><i class="flag-icon flag-icon-mn"></i>Mongolia</button>
+                      <button class="dropdown-item"><i class="flag-icon flag-icon-au"></i>Australia</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--/span-->
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>To</label>
+                  <div ngbDropdown class="d-inline-block">
+                    <button
+                      class="btn btn-outline-primary"
+                      id="ToCountry"
+                      ngbDropdownToggle>
+                      <i class="flag-icon flag-icon-au"></i> Australia
+                    </button>
+                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                      <button class="dropdown-item"><i class="flag-icon flag-icon-au"></i>Australia</button>
+                      <button class="dropdown-item"><i class="flag-icon flag-icon-mn"></i>Mongolia</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--/span-->
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Amount</label>
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">
+                            <i class="ti-money"></i>
+                        </span>
+                    </div>
+                    <input aria-describedby="basic-addon1" aria-label="Amount" class="form-control" placeholder="Amount" type="text">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Rate</label>
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">
+                            <i class="ti-money"></i>
+                        </span>
+                    </div>
+                    <input aria-describedby="basic-addon1" aria-label="Rate" class="form-control" placeholder="Rate" type="text">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="control-label">Paymnet Method</label>
+                  <input class="form-control" id="paymentMethod" placeholder="Payment method" type="text">
+                </div>
+              </div>
+            </div>
+            <!--/row-->
+
+            <!--/row-->
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Price</label>
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1">
+                                                <i class="ti-money"></i>
+                                            </span>
+                    </div>
+                    <input aria-describedby="basic-addon1" aria-label="price" class="form-control" placeholder="price" type="text">
+                  </div>
+                </div>
+              </div>
+              <!--/span-->
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Discount</label>
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon2">
+                                                <i class="ti-cut"></i>
+                                            </span>
+                    </div>
+                    <input aria-describedby="basic-addon2" aria-label="Discount" class="form-control" placeholder="Discount" type="text">
+                  </div>
+                </div>
+              </div>
+              <!--/span-->
+            </div>
+            <h5 class="card-title m-t-40">Terms & Conditions</h5>
+            <div class="row">
+              <div class="col-md-12 ">
+                <div class="form-group">
+                  <textarea class="form-control" rows="4">Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. but the majority have suffered alteration in some form, by injected humour</textarea>
+                </div>
+              </div>
+            </div>
+            <!--/row-->
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Meta Title</label>
+                  <input class="form-control" type="text"> </div>
+              </div>
+              <!--/span-->
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Meta Keyword</label>
+                  <input class="form-control" type="text"> </div>
+              </div>
+              <!--/span-->
+              <div class="col-md-3">
+                <h5 class="card-title m-t-20">Upload Image</h5>
+                <div class="el-element-overlay">
+                  <div class="el-card-item">
+                    <div class="el-card-avatar el-overlay-1">
+                      <img alt="user" src="assets/images/gallery/chair3.jpg" />
+                      <div class="el-overlay">
+                        <ul class="list-style-none el-info">
+                          <li class="el-item">
+                            <a class="btn default btn-outline image-popup-vertical-fit el-link" href="assets/images/gallery/chair3.jpg">
+                              <i class="icon-magnifier"></i>
+                            </a>
+                          </li>
+                          <li class="el-item">
+                            <a class="btn default btn-outline el-link" href="javascript:void(0);">
+                              <i class="icon-link"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="btn btn-info waves-effect waves-light">
+                  <span>Upload Anonther Image</span>
+                  <input class="upload" type="file"> </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <h5 class="card-title m-t-40">GENERAL INFO</h5>
+                <div class="table-responsive">
+                  <table class="table table-bordered td-padding">
+                    <tbody>
+                    <tr>
+                      <td>
+                        <input class="form-control" placeholder="Brand" type="text">
+                      </td>
+                      <td>
+                        <input class="form-control" placeholder="Stellar" type="text">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input class="form-control" placeholder="Delivery Condition" type="text">
+                      </td>
+                      <td>
+                        <input class="form-control" placeholder="Knock Down" type="text">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input class="form-control" placeholder="Seat Lock Included" type="text">
+                      </td>
+                      <td>
+                        <input class="form-control" placeholder="Yes" type="text">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input class="form-control" placeholder="Type" type="text">
+                      </td>
+                      <td>
+                        <input class="form-control" placeholder="Office Chair" type="text">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input class="form-control" placeholder="Style" type="text">
+                      </td>
+                      <td>
+                        <input class="form-control" placeholder="Contemporary &amp; Modern" type="text">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input class="form-control" placeholder="Wheels Included" type="text">
+                      </td>
+                      <td>
+                        <input class="form-control" placeholder="Yes" type="text">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input class="form-control" placeholder="Upholstery Included" type="text">
+                      </td>
+                      <td>
+                        <input class="form-control" placeholder="Yes" type="text">
+                      </td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <hr> </div>
+          <div class="form-actions m-t-40">
+            <button class="btn btn-success" type="submit">
+              <i class="fa fa-check"></i> Save</button>
+            <button class="btn btn-dark" type="button">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Column -->
+</div>

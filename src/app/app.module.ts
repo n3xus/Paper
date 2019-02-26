@@ -29,12 +29,15 @@ import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
 import { PERFECT_SCROLLBAR_CONFIG } from 'ngx-perfect-scrollbar';
 import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
 
+import { ListingComponent } from './listing';
+import { PostTradeComponent } from './posttrade';
+
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true,
   wheelSpeed: 1,
   wheelPropagation: true,
   minScrollbarLength: 20
-};          
+};
 
 @NgModule({
   declarations: [
@@ -44,7 +47,9 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     BlankComponent,
     NavigationComponent,
     BreadcrumbComponent,
-    SidebarComponent
+    SidebarComponent,
+    ListingComponent,
+    PostTradeComponent
   ],
   imports: [
     CommonModule,

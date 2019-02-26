@@ -3,6 +3,9 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { FullComponent } from './layouts/full/full.component';
 import { BlankComponent } from './layouts/blank/blank.component';
+import {ListingComponent} from './listing';
+import { PostTradeComponent } from './posttrade';
+import {StarterComponent} from './starter/starter.component';
 
 export const Approutes: Routes = [
   {
@@ -10,9 +13,22 @@ export const Approutes: Routes = [
     component: FullComponent,
     children: [
       { path: '', redirectTo: '/dashboard/classic', pathMatch: 'full' },
+      { path: 'listing', component: ListingComponent, pathMatch: 'full' },
+      // { path: 'post_trade', component: PostTradeComponent, pathMatch: 'full' },
       {
         path: 'dashboard',
         loadChildren: './dashboards/dashboard.module#DashboardModule'
+      },
+      {
+        path: 'post_trade',
+        data: {
+          title: 'Post Trade',
+          urls: [
+            { title: 'Home', url: '' },
+            { title: 'Post Trade' }
+          ]
+        },
+        component: PostTradeComponent
       },
       {
         path: 'starter',
